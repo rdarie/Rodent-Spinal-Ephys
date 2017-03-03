@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Python temporary files
+*.pyc
+
+# Notes created by the code
+*.txt

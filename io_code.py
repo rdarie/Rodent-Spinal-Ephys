@@ -14,7 +14,7 @@ def TDMS_to_dict(TDMS_filename, input_chan, output_chan):
     list_out = {}
     for idx in range(len(input_chan)):
         channel_name = 'Dev2/ai'+str(input_chan[idx])
-        pdb.set_trace()
+        #pdb.set_trace()
         channel = tdms_file.object('Untitled', channel_name)
         data = channel.data
         time = channel.time_track()

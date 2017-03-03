@@ -15,5 +15,6 @@ baseline_subtract = lambda x: x-x[0]
 #Caligula
 experiments = ['Control', 'Perlapine', 'Severed']
 amplitudes = ['100','120','140','160','180','200','220','240','260','280','300','320','340','360','380','400','420','500','600','700','800','900','1000']
-#plot_sta(input_chan, output_chan, spike_dur = 10, filter_function = remove_mean, debugging = False, updateLog = False, override_ylim = 0, normalize = NORM.NONE)
-compare_sta(input_chan, output_chan, spike_dur = 15, conditions = experiments, filter_function = remove_mean, debugging = True, override_ylim = 0, normalize = NORM.NONE)
+
+plot_sta(input_chan, output_chan, spike_dur = 10, filter_function = remove_mean, debugging = False, updateLog = False, override_ylim = [-0.2,0.2], normalize = NORM.NONE)
+#compare_sta(input_chan, output_chan, spike_dur = 15, conditions = experiments, filter_function = remove_mean, debugging = True, override_ylim = 0, normalize = NORM.NONE)

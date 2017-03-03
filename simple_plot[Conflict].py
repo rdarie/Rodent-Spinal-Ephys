@@ -16,7 +16,6 @@ if not TDMS_filename: # if file not selected, select a default
     warnings.warn(warning_string, UserWarning, stacklevel=2)
 
 raw = TDMS_to_dict(TDMS_filename,[2,1],['Raw Voltage', 'trigger'])
-
 pdb.set_trace()
 plt.plot(1e3*raw['Raw Voltage']['time'], raw['Raw Voltage']['data'],'b-',label = 'Raw Voltage')
 #plt.plot(1e3*raw['trigger']['time'], raw['trigger']['data'],'r-', label = 'TTL')
